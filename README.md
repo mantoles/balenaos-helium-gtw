@@ -1,4 +1,4 @@
-# Helium Hotspot EU version
+# Helium Hotspot US version
 
 This project deploys a LoRaWAN Helium Hotspot with European configuration based on SX1301 LoRa chip.
 
