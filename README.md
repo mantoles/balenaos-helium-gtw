@@ -12,7 +12,7 @@ You will need a [balenaCloud free account](https://dashboard.balena-cloud.com/) 
 
 Deploy the code with this button
 
-[![](https://www.balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/PastaGringo/balenaos-helium-gtw)
+[![](https://www.balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/Mantoles/balenaos-helium-gtw)
 
 
 ## Modify the code
@@ -24,7 +24,7 @@ If you want to try you need to:
 3) modify the docker-compose file to configure lora service based on your needs:
 ```bash
       args:
-        - LORA_REGION=EU868
+        - LORA_REGION=US915
         - LORA_UDP=1680 #default "1680"
         #- SPI_SPEED=8000000 #default 2000000
         #- PIN_RESET=11
@@ -33,7 +33,7 @@ If you want to try you need to:
 4) modify the docker-compose file to configure helium-miner service based on your needs:
 ```bash
     environment:
-      - 'REGION_OVERRIDE=EU868'
+      - 'REGION_OVERRIDE=US915'
 ```
 4) click on deploy from your own repo page
 5) create the app from CloudBalena, download the image, flash the image and insert the SD card into your device
