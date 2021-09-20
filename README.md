@@ -19,8 +19,8 @@ Deploy the code with this button
 
 If you want to try you need to:
 
-1) fork my repo to your own github account : https://github.com/PastaGringo/balenaos-helium-gtw
-2) inside the readme change the `repoUrl=https://github.com/PastaGringo/balenaos-helium-gtw` by `repoUrl=https://github.com/YourUsername/balenaos-helium-gtw`
+1) fork my repo to your own github account : https://github.com/mantoles/balenaos-helium-gtw
+2) inside the readme change the `repoUrl=https://github.com/PastaGringo/balenaos-helium-gtw` by `repoUrl=https://github.com/mantoles/balenaos-helium-gtw`
 3) modify the docker-compose file to configure lora service based on your needs:
 ```bash
       args:
