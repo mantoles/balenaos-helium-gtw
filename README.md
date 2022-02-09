@@ -1,6 +1,6 @@
-# Helium Hotspot US version
+# Helium Hotspot EU version
 
-This project deploys a LoRaWAN Helium Hotspot with US configuration based on SX1301 LoRa chip.
+This project deploys a LoRaWAN Helium Hotspot with EU configuration based on SX1301 LoRa chip.
 
 ## Getting started
 
@@ -24,7 +24,7 @@ If you want to try you need to:
 3) modify the docker-compose file to configure lora service based on your needs:
 ```bash
       args:
-        - LORA_REGION=US915
+        - LORA_REGION=EU868
         - LORA_UDP=1680 #default "1680"
         #- SPI_SPEED=8000000 #default 2000000
         #- PIN_RESET=11
@@ -33,7 +33,7 @@ If you want to try you need to:
 4) modify the docker-compose file to configure helium-miner service based on your needs:
 ```bash
     environment:
-      - 'REGION_OVERRIDE=US915'
+      - 'REGION_OVERRIDE=EU868'
 ```
 4) click on deploy from your own repo page
 5) create the app from CloudBalena, download the image, flash the image and insert the SD card into your device
