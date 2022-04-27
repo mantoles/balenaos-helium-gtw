@@ -26,8 +26,8 @@ If you want to try you need to:
       args:
         - LORA_REGION=EU868
         - LORA_UDP=1680 #default "1680"
-        #- SPI_SPEED=8000000 #default 2000000
-        #- PIN_RESET=11
+        - SPI_SPEED=8000000 #default 2000000
+        - PIN_RESET=11
         - MINER_URL=helium-miner #default "helium-miner"
 ```
 4) modify the docker-compose file to configure helium-miner service based on your needs:
